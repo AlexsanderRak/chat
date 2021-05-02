@@ -1,0 +1,88 @@
+@import '../AllColors'
+
+.messageForm 
+    display: flex
+    align-items: flex-end
+    background: $gray-ligth
+
+    &-field
+        width: 90%
+        background: $gray-ligth
+
+        textarea
+            font-family: $font !important
+            font-size: 16px
+            font-weight: normal
+            letter-spacing: .5px
+            padding: 0 10px
+            color: $text-dark
+        div
+            &::after,&::before
+                display: none;
+
+    &-btn
+       
+        background: $light-blue
+        border: 2px solid $none-color
+        transition: all 1.3s
+        font-size: 16px
+        color: $white
+        font-weight: 600
+        cursor: pointer
+        height: 53px
+        width: 10%
+        display: flex
+        align-items: center
+        justify-content: center
+
+        @media screen and ( max-width: 900px )
+            margin-top: 20px
+        
+
+        &:focus
+            outline: none
+
+        // &:hover
+        //     animation-duration: .3s;
+        //     animation-name: slidein;
+        //     border-bottom: 2px solid $white
+        //     border-right: 2px solid $white
+        //     border-top: 2px solid $white
+        //     border-left: 2px solid $white
+            
+
+// @keyframes slidein 
+//     0% 
+//         border-bottom: 2px solid $none-color
+//         border-right: 2px solid $none-color
+//         border-top: 2px solid $none-color
+//         border-left: 2px solid $none-color
+
+//     25%
+//         border-bottom: 2px solid $white
+//         border-right: 2px solid $none-color
+//         border-top: 2px solid $none-color
+//         border-left: 2px solid $none-color
+
+//     50%
+//         border-bottom: 2px solid $white
+//         border-right: 2px solid $white
+//         border-top: 2px solid $none-color
+//         border-left: 2px solid $none-color
+
+//     75%
+//         border-bottom: 2px solid $white
+//         border-right: 2px solid $white
+//         border-top: 2px solid $white
+//         border-left: 2px solid $none-color
+
+//     100% 
+//         border-bottom: 2px solid $white
+//         border-right: 2px solid $white
+//         border-top: 2px solid $white
+//         border-left: 2px solid $white
+  
+
+
+
+        

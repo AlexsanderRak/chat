@@ -1,0 +1,64 @@
+@import '../AllColors' 
+@import '../Mixins'
+
+.chatsMenu
+    position: relative
+    height: 100vh
+    overflow: hidden
+    padding-left: 100px
+    // border-right: 2px solid $white
+    background: $light-blue
+    transition: $transition
+    box-shadow: 2px 2px 0px 0px rgba($white, .1), 2px 2px 0px 0px rgba($white, .1)
+
+
+    &-content
+        // border-left: 1px solid $white
+        height: 100%
+
+        &-search
+           display: flex
+           align-items: center
+           padding: 10px 20px
+        
+        &-chats
+            font-family: $font
+            height: 100%
+            overflow: auto
+
+            @include scrollBar
+
+            &-item
+                display: flex
+                justify-content: space-between
+                align-items: center
+                padding: 15px
+                border-top: 1px solid $white
+                cursor: pointer
+                transition: $transition
+
+                &:hover
+                    background: linear-gradient(-135deg, rgba($white, .5), rgba($white, 0))
+                
+                &-active
+                    background: linear-gradient(-135deg, rgba($white, .5), rgba($white, 0))
+
+                &-name
+                    color: $white
+                    font-size: 15px
+                
+                &-messages
+                    background: $btn-color
+                    border-radius: 5px
+                    width: max-content
+                    padding: 1px 5px
+                    display: flex
+                    align-items: center
+                    justify-content: center
+
+                    span
+                        color: $white
+                        font-size: 14px
+                        font-weight: bold
+                        letter-spacing: 1px
+
