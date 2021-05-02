@@ -3,8 +3,6 @@ import "./SendMessageForm.sass";
 import TextField from '@material-ui/core/TextField';
 import { v4 as uuidv4 } from 'uuid';
 
-import { socketEmit, createMessage_api, } from "./api";
-
 function SendMessageForm(props) {
   const [taskText, setTaskText] = useState();
 

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import MyTextField from "../utils/MyTextField";
 import "./ChatsMenu.sass";
 import SearchRoundedIcon from "@material-ui/icons/SearchRounded";
@@ -6,7 +6,7 @@ import MyIcons from "../utils/MyIcons";
 import MyBadge from "../utils/MyBadge";
 
 function ChatsMenu(props) {
-  const [isOpen, setIsOpen] = useState(true);
+
   const prepareName = (name) => {
     return name.split(':')[0];
   }

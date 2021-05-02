@@ -18,13 +18,13 @@ const useStyles = makeStyles({
     boxShadow:
       "2px 2px 0px 0px rgba(255, 255, 255, .1), 2px 2px 0px 0px rgba(255, 255, 255, .1)",
     "& th": {
-      fontFamily: "'Oswald', sans-serif !important",
+      fontFamily: "'Roboto', sans-serif !important",
       color: "rgba(0, 0, 0, 0.8) !important",
       borderColor: "#fff",
     },
 
     "& td": {
-      fontFamily: "'Oswald', sans-serif !important",
+      fontFamily: "'Roboto', sans-serif !important",
       color: "rgba(0, 0, 0, 0.5) !important",
       borderColor: "#fff",
     },

@@ -1,9 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Messages.sass";
 
 
 function Messages(props) {
-  const [isOpen, setIsOpen] = useState(true);
 
   const userName = JSON.parse(localStorage.getItem("user"));
 

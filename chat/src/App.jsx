@@ -41,8 +41,6 @@ function App() {
           <Switch>
             <GuardedRoute exact path="/chats" component={ChatsClass} meta={{ auth: true }} />
             <GuardedRoute exact path="/users" component={Users} meta={{ auth: true }} />
-            <GuardedRoute exact path="/users/create" component={Users} meta={{ auth: true }} />
-            <GuardedRoute exact path="/users/edite" component={Users} meta={{ auth: true }} />
             <GuardedRoute exact path="/knowledgeBase" component={KnowledgeBase} meta={{ auth: true }} />
             <Route exact path="/login" component={Login} />
             <Route path="/client" component={Client} />

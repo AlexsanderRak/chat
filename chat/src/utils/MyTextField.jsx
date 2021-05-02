@@ -41,6 +41,7 @@ export default function MyTextField(props) {
       value={props.value}
       helperText={props.isError && props.errorText}
       label={props.label}
+      type={props.type ? props.type : 'text'}
     />
   );
 }
