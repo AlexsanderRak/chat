@@ -113,7 +113,7 @@ export default function MyTable(props) {
         {/* TableBody  */}
         <TableBody>
           {props.data.map((row, index) => (
-            <TableRow key={index} onClick={() => checking(index)}>
+            <TableRow key={index} onClick={() => props.isChecked && checking(index)}>
               {props.isChecked && (
                 <TableCell padding="checkbox">
                   <Checkbox

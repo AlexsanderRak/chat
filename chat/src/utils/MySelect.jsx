@@ -53,7 +53,7 @@ export default function MySelect(props) {
           onChange={props.change}
         >
           {props.valueList.map((el, index) =>
-          <MenuItem key={index} value={el}>{el}</MenuItem>
+          <MenuItem key={index} value={el.id}>{el.title}</MenuItem>
           )}
         </Select>
         { props.isError && 

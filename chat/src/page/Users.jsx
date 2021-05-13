@@ -196,7 +196,7 @@ function Users(props) {
                     <MySelect
                       label={"Роль"}
                       value={role}
-                      valueList= {['0', '1', '13']}
+                      valueList= {[{id:'0', title: 'Администратор'}, {id:'1', title: 'Сотрудник'}, {id:'13', title: 'Пользователь'}]}
                       change={(e) => {
                         setRole(e.target.value);
                       }}
